@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+      
+      
+          .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-out, transform 1s ease-out;
+            transform: translateY(20px);
+          }
+      
+      
+          .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+          }
+      
+      
+          .hover-animate:hover {
+            transform: scale(1.05);
+          }
+      
+      
+         
+          .mobile-menu {
+            display: none;
+          }
+      
+      
+          @media (max-width: 768px) {
+            .desktop-menu {
+              display: none;
+            }
+            .mobile-menu {
+              display: block;
+            }
+          }
+      
+      
+         
+          .menu-button {
+            position: relative;
+            z-index: 10;
+          }
+        </style>
+      </head>
+     
+      <body class="bg-gray-100">
+
+
+        <!-- Navbar -->
+        <nav class="bg-blue-500 p-4 text-white fade-in relative">
+          <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-2xl font-bold">TravelWithUs</h1>
+      
     
 </body>
 </html>
