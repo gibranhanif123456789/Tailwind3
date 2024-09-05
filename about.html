@@ -55,7 +55,45 @@
       <p class="text-lg text-gray-700 max-w-2xl mx-auto">We are passionate about travel and helping people discover new places and cultures. Our mission is to make travel accessible and enjoyable for everyone. With our curated destinations, we aim to offer unforgettable experiences to all our customers.</p>
     </div>
   </section>
+<!-- Footer -->
+<footer class="bg-blue-500 text-white py-8 fade-in">
+    <div class="container mx-auto text-center">
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="https://example.com/facebook-logo.png" alt="Facebook" class="w-6 h-6 hover-animate">
+        </a>
+        <a href="https://x.com" target="_blank" aria-label="X (formerly Twitter)">
+          <img src="https://example.com/x-logo.png" alt="X" class="w-6 h-6 hover-animate">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="https://example.com/instagram-logo.png" alt="Instagram" class="w-6 h-6 hover-animate">
+        </a>
+      </div>
+      <p>Created by: Gibran</p>
+    </div>
+  </footer>
 
-    
+
+  <script>
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+
+    fadeInElements.forEach(element => {
+      observer.observe(element);
+    });
+  </script>
+
+
 </body>
+
 </html>
