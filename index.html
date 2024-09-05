@@ -6,6 +6,9 @@
         <title>Home</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
+        
+            @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap');
+           
           @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -58,17 +61,17 @@
 
 
         <!-- Navbar -->
-        <nav class="bg-blue-500 p-4 text-white fade-in relative">
+        <nav class="bg-blue-400 p-4 text-white fade-in relative">
           <div class="container mx-auto flex items-center justify-between">
-            <h1 class="text-2xl font-bold">TravelWithUs</h1>
+            <h1 class="text-2xl font-bold font-Lobster">TravelWithUs</h1>
 
             <!-- Desktop Menu -->
       <div class="desktop-menu hidden md:flex items-center space-x-4">
-        <a href="index.html" class="hover:underline hover-animate">Home</a>
-        <a href="about.html" class="hover:underline hover-animate">About</a>
-        <a href="review.html" class="hover:underline hover-animate">Reviews</a>
-        <a href="signin.html" class="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500">Sign Up</a>
-        <a href="login.html" class="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500">Login</a>
+        <a href="index.html" class="hover:text-blue-700 hover-animate">Home</a>
+        <a href="about.html" class="hover:text-blue-700 hover-animate">About</a>
+        <a href="review.html" class="hover:text-blue-700 hover-animate">Reviews</a>
+        <a href="signin.html" class="bg-blue-400 text-white py-2 px-4 rounded-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">Sign Up</a>
+        <a href="login.html" class="bg-blue-400 text-white py-2 px-4 rounded-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">Login</a>
       </div>
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-button" class="menu-button text-white focus:outline-none md:hidden">
@@ -90,10 +93,13 @@
 
 
     <!-- Home Section -->
-    <section class="flex flex-col items-center justify-center min-h-screen bg-white text-center fade-in">
+    <section class="flex flex-col items-center justify-center min-h-screen bg-center bg-cover bg-no-repeat text-white text-center fade-in" style="background-image: url('./assets/bg.avif');">
       <h2 class="text-4xl font-bold mb-6">Welcome to TravelWithUs</h2>
-      <p class="text-lg text-gray-700 mb-8">Discover amazing destinations and plan your next adventure with us!</p>
+      <p class="text-lg text-gray-700 mb-8 text-white">Discover amazing destinations and plan your next adventure with us!</p>
+      <button class="block px-4 py-2 bg-blue-400 hover:bg-blue-500 text-white">Start Your Journey</button>
+    </section>
       <div class="flex space-x-4">
+
     </div>
     </section>
 
@@ -102,43 +108,43 @@
           <h2 class="text-3xl font-bold text-center mb-8">Featured Destinations</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-              <img src="https://example.com/destination1.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Bali, Indonesia">
+              <img src="./assets/img/bali.avif" class="w-full h-40 object-cover rounded mb-4" alt="Bali, Indonesia">
               <h3 class="text-xl font-semibold">Bali, Indonesia</h3>
               <p class="mt-2">Discover the magical island of Bali.</p>
             </div>
             <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-              <img src="https://example.com/destination2.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Paris, France">
+              <img src="./assets/img/paris.avif" class="w-full h-40 object-cover rounded mb-4" alt="Paris, France">
               <h3 class="text-xl font-semibold">Paris, France</h3>
               <p class="mt-2">Experience the romance of Paris.</p>
             </div>
             <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-              <img src="https://example.com/destination3.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
+              <img src="./assets/img/kyoto.avif" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
               <h3 class="text-xl font-semibold">Kyoto, Japan</h3>
               <p class="mt-2">Explore the ancient temples of Kyoto.</p>
             </div>
             <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-              <img src="https://example.com/destination3.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
-              <h3 class="text-xl font-semibold">Kyoto, Japan</h3>
+              <img src="./assets/img/andes.avif" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
+              <h3 class="text-xl font-semibold">Andes Mountain, USA</h3>
               <p class="mt-2">Explore the ancient temples of Kyoto.</p>
             </div>
             <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-              <img src="https://example.com/destination3.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
-              <h3 class="text-xl font-semibold">Kyoto, Japan</h3>
+              <img src="./assets/img/cape.avif" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
+              <h3 class="text-xl font-semibold">Cape Town, South Africa</h3>
               <p class="mt-2">Explore the ancient temples of Kyoto.</p>
             </div>
             <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-              <img src="https://example.com/destination3.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
-              <h3 class="text-xl font-semibold">Kyoto, Japan</h3>
+              <img src="./assets/img/machu.avif" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
+              <h3 class="text-xl font-semibold">Machu Picu, Nepal</h3>
               <p class="mt-2">Explore the ancient temples of Kyoto.</p>
             </div>
             <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-              <img src="https://example.com/destination3.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
-              <h3 class="text-xl font-semibold">Kyoto, Japan</h3>
+              <img src="./assets/img/salar.avif" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
+              <h3 class="text-xl font-semibold">Salar de Uyuni, Bolivia</h3>
               <p class="mt-2">Explore the ancient temples of Kyoto.</p>
             </div>
             <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-              <img src="https://example.com/destination3.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
-              <h3 class="text-xl font-semibold">Kyoto, Japan</h3>
+              <img src="./assets/img/tokyo.avif" class="w-full h-40 object-cover rounded mb-4" alt="Kyoto, Japan">
+              <h3 class="text-xl font-semibold">Tokyo, Japan</h3>
               <p class="mt-2">Explore the ancient temples of Kyoto.</p>
             </div>
             <!-- Additional destinations... -->
@@ -147,17 +153,17 @@
       </section>
 
       <!-- Footer -->
-  <footer class="bg-blue-500 text-white py-8 fade-in">
+  <footer class="bg-blue-400 text-white py-8 fade-in">
     <div class="container mx-auto text-center">
       <div class="flex justify-center space-x-4 mb-4">
         <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-          <img src="https://example.com/facebook-logo.png" alt="Facebook" class="w-6 h-6 hover-animate">
+          <img src="./assets/img/download__2_-removebg-preview.png" alt="Facebook" class="w-6 h-6 hover-animate">
         </a>
         <a href="https://x.com" target="_blank" aria-label="X (formerly Twitter)">
-          <img src="https://example.com/x-logo.png" alt="X" class="w-6 h-6 hover-animate">
+          <img src="./assets/img/x.jpeg" alt="X" class="w-6 h-6 hover-animate">
         </a>
         <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-          <img src="https://example.com/instagram-logo.png" alt="Instagram" class="w-6 h-6 hover-animate">
+          <img src="./assets/img/instagram-removebg-preview.png" alt="Instagram" class="w-6 h-6 hover-animate">
         </a>
       </div>
       <p>Created by: Gibran</p>

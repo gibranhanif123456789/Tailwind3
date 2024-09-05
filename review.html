@@ -1,109 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body class="bg-gray-100">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Reviews</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-  
-  
-      .fade-in {
-        opacity: 0;
-        transition: opacity 1s ease-out, transform 1s ease-out;
-        transform: translateY(20px);
-      }
-  
-  
-      .fade-in.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-  
-  
-      .hover-animate:hover {
-        transform: scale(1.05);
-      }
-    </style>
-  </head>
-<!-- Review Section -->
-<section class="py-12 bg-white min-h-screen fade-in">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Reviews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+
+    .fade-in {
+      opacity: 0;
+      transition: opacity 1s ease-out, transform 1s ease-out;
+      transform: translateY(20px);
+    }
+
+
+    .fade-in.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    .hover-animate:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+
+  <!-- Navbar -->
+  <nav class="bg-blue-500 p-4 text-white fade-in">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">TravelWithUs</h1>
+      <div>
+        <a href="index.html" class="px-4 hover:underline hover-animate">Home</a>
+        <a href="about.html" class="px-4 hover:underline hover-animate">About</a>
+        <a href="review.html" class="px-4 hover:underline hover-animate">Reviews</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Review Section -->
+  <section class="py-12 bg-white min-h-screen fade-in">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold text-center mb-8">Customer Reviews</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe" class="w-16 h-16 rounded-full mr-4">
+            <div>
+              <h3 class="text-xl font-semibold">John Doe</h3>
+              <p class="text-gray-600">Bali, Indonesia</p>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-700">"I had an amazing experience visiting Bali. The culture, the food, and the scenery were all spectacular. Highly recommend!"</p>
+        </div>
 
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith" class="w-16 h-16 rounded-full mr-4">
+            <div>
+              <h3 class="text-xl font-semibold">Jane Smith</h3>
+              <p class="text-gray-600">Paris, France</p>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-700">"Paris was everything I dreamed of and more! The Eiffel Tower, the Louvre, and the cuisine were unforgettable."</p>
+        </div>
+
+
+       
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Michael Brown" class="w-16 h-16 rounded-full mr-4">
+            <div>
+              <h3 class="text-xl font-semibold">Michael Brown</h3>
+              <p class="text-gray-600">Kyoto, Japan</p>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-700">"Kyoto was a peaceful escape from the hustle of the city. The temples and gardens are breathtaking."</p>
+        </div>
+
+
+        
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Sarah Lee" class="w-16 h-16 rounded-full mr-4">
+            <div>
+              <h3 class="text-xl font-semibold">Sarah Lee</h3>
+              <p class="text-gray-600">New York, USA</p>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-700">"New York has an energy like no other. The skyscrapers, Central Park, and the food scene are phenomenal!"</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+       
           
-          <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-            <div class="flex items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe" class="w-16 h-16 rounded-full mr-4">
-              <div>
-                <h3 class="text-xl font-semibold">John Doe</h3>
-                <p class="text-gray-600">Bali, Indonesia</p>
-              </div>
-            </div>
-            <p class="mt-4 text-gray-700">"I had an amazing experience visiting Bali. The culture, the food, and the scenery were all spectacular. Highly recommend!"</p>
-          </div>
-          <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-            <div class="flex items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Michael Brown" class="w-16 h-16 rounded-full mr-4">
-              <div>
-                <h3 class="text-xl font-semibold">Michael Brown</h3>
-                <p class="text-gray-600">Kyoto, Japan</p>
-              </div>
-            </div>
-            <p class="mt-4 text-gray-700">"Kyoto was a peaceful escape from the hustle of the city. The temples and gardens are breathtaking."</p>
-          </div>
-  
-  
-          
-          <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-            <div class="flex items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Sarah Lee" class="w-16 h-16 rounded-full mr-4">
-              <div>
-                <h3 class="text-xl font-semibold">Sarah Lee</h3>
-                <p class="text-gray-600">New York, USA</p>
-              </div>
-            </div>
-            <p class="mt-4 text-gray-700">"New York has an energy like no other. The skyscrapers, Central Park, and the food scene are phenomenal!"</p>
-          </div>
-          <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-            <div class="flex items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Sarah Lee" class="w-16 h-16 rounded-full mr-4">
-              <div>
-                <h3 class="text-xl font-semibold">Sarah Lee</h3>
-                <p class="text-gray-600">New York, USA</p>
-              </div>
-            </div>
-            <p class="mt-4 text-gray-700">"New York has an energy like no other. The skyscrapers, Central Park, and the food scene are phenomenal!"</p>
-          </div>
-          <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow hover-animate fade-in">
-            <div class="flex items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Sarah Lee" class="w-16 h-16 rounded-full mr-4">
-              <div>
-                <h3 class="text-xl font-semibold">Sarah Lee</h3>
-                <p class="text-gray-600">New York, USA</p>
-              </div>
-            </div>
-            <p class="mt-4 text-gray-700">"New York has an energy like no other. The skyscrapers, Central Park, and the food scene are phenomenal!"</p>
-          </div>
-  
-          <!-- Footer -->
-  <footer class="bg-blue-500 text-white py-8 fade-in">
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-blue-400 text-white py-8 fade-in">
     <div class="container mx-auto text-center">
       <div class="flex justify-center space-x-4 mb-4">
         <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-          <img src="https://example.com/facebook-logo.png" alt="Facebook" class="w-6 h-6 hover-animate">
+          <img src="./assets/img/download__2_-removebg-preview.png" alt="Facebook" class="w-6 h-6 hover-animate">
         </a>
         <a href="https://x.com" target="_blank" aria-label="X (formerly Twitter)">
-          <img src="https://example.com/x-logo.png" alt="X" class="w-6 h-6 hover-animate">
+          <img src="./assets/img/x.jpeg" alt="X" class="w-6 h-6 hover-animate">
         </a>
         <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-          <img src="https://example.com/instagram-logo.png" alt="Instagram" class="w-6 h-6 hover-animate">
+          <img src="./assets/img/instagram-removebg-preview.png" alt="Instagram" class="w-6 h-6 hover-animate">
         </a>
       </div>
       <p>Created by: Gibran</p>
@@ -129,10 +147,7 @@
       observer.observe(element);
     });
   </script>
-        </div>
-      </div>
-    </section>
-<body>
-    
+
+
 </body>
 </html>
